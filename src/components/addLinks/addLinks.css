@@ -1,0 +1,20 @@
+.container{
+    /* display:flex;
+    justify-content: center; */
+
+    display:ruby-base-container;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    margin: 0 auto;
+    width:50%;
+    padding:100px;
+    
+}
+
+.icons{
+    margin-right: 1px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
