@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { LinkContext } from "../../context/LinkContext";
 import '../addLinks/addLinks.css'
+import './removeLinks.css'
 
 export const RemoveLinks = () => {
   const data = useContext(LinkContext);
@@ -16,13 +17,13 @@ export const RemoveLinks = () => {
 
   return (
     <>
-        <h3>Added icons</h3>
+        <h3>Added Apps</h3>
       <div className="container">
         {linkOperation.map((items) => {
           console.log(items);
           return (
             <button
-               style={{marginTop: '10px'}}
+                style={{marginTop: '10px'}}
                 onClick={() => {
                   handleRemove(items.id);
                 }}

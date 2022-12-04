@@ -3,6 +3,7 @@
     justify-content: center; */
 
     display:ruby-base-container;
+    position: relative;
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 10px;
     margin: 0 auto;
@@ -12,7 +13,7 @@
 }
 
 .icons{
-    margin-right: 1px;
+    margin-right: 0px;
     padding: 10px;
     display: flex;
     flex-direction: column;

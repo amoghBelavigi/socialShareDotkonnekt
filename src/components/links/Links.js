@@ -7,26 +7,21 @@ export const SocialLink = () => {
   const data = useContext(LinkContext);
   console.log({ data });
 
-  const [socialLinks, setSocialLinks] = useState(SocialMediaLinks);
-  const [message, setMessage] = useState("Select the App You Want To Share On");
+
+  const [message, setMessage] = useState("Click on the App You Want To Share On");
 
   const handleLink = (name) => {
     setMessage(`Link copied to share with ${name}`);
   };
 
-  const handleHover = () => {
-    if (data.linkOperation.length === 0) {
-      alert("Add social Media Links to share");
-    }
-  };
-
   return (
     <>
-      <h1>{message}</h1>
-      <div className="fab" onClick={handleHover}>
+      <h1 className="title">{message}</h1>
+      <div className="fab">
         <div className="mainop">
         <span>SHARE</span>
         <div class="shareContainer">
+          <i class="fab fa-facebook-f"></i>
         <i class="fab fa-share-nodes"></i>
         <i class="material-icons fa-solid fa-share-nodes"></i>
         </div>

@@ -27,11 +27,10 @@ import {
   export const SocialMediaLinks = [
     {
       id: 1,
-      name: "watsapp",
+      name: "whatsapp",
       icon: <WhatsappIcon size={42} round={true} />,
       component: WhatsappShareButton,
     },
-  
     {
       id: 2,
       name: "Facebook",
