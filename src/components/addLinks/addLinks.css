@@ -9,7 +9,6 @@
     margin: 0 auto;
     width:50%;
     padding:100px;
-    
 }
 
 .icons{
@@ -18,4 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-image: none;
 }

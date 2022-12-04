@@ -23,11 +23,13 @@ export const AddSocialLink  =() =>{
             <div className="container">
                 {SocialMediaLinks.map((items)=>{
                     return(
-                        <button style={{marginTop: '10px'}} onClick={()=>{
+                        <button style={{marginTop: '10px', border:'black'}} onClick={()=>{
                             collectLinks(items.id);
                         }}>
                         <div key={items.id} className="icons">
+                            <div className="addedicons">
                             {items.icon}
+                            </div>
                         </div>
                         </button>
                     );
